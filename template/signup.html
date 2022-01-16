@@ -591,7 +591,7 @@
       let bok = true
       $('#codebutton').click(function () {
         if (!$('#email-login-input').val()) {
-          alert('请输入正确的手机号')
+          alert('Please enter the correct mobile phone number')
           return false
         }
         if (!bok) {
@@ -607,13 +607,13 @@
         })
         bok = false
         setTimeout(() => {
-          alert('发送成功')
+          alert('Sent successfully')
         }, 5000)
         let timer = setInterval(function () {
           num--
           if (num <= 0) {
             clearInterval(timer)
-            $('#codebutton').val('重新获取')
+            $('#codebutton').val('Reacquire')
             bok = true
             num = 60
           } else {
